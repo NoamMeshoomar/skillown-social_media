@@ -1,0 +1,47 @@
+.PostDetails {
+    position: relative;
+    padding: 40px;
+    background-color: var(--defaultWhite);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.PostDetails .post-information {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.PostDetails h1 {
+    color: var(--defaultDarkGrey);
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.PostDetails h3 {
+    color: var(--defaultExtraLightGrey);
+    font-size: 16px;
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+.PostDetails p {
+    color: var(--defaultLightGrey);
+    font-size: 16px;
+    font-weight: 300;
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1170px) {
+    .PostDetails {
+        margin-bottom: 40px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .PostDetails {
+        width: 100vw;
+        height: 380px;
+    }
+}

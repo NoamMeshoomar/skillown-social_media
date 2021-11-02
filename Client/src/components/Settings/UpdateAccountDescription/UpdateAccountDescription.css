@@ -1,0 +1,48 @@
+.UpdateAccountDescription h1 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--defaultDarkGrey);
+    margin-bottom: 20px;
+}
+
+.UpdateAccountDescription textarea {
+    resize: none;
+    display: block;
+    border: 2px solid var(--defaultGreen);
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: var(--defaultDarkGrey);
+}
+
+.UpdateAccountDescription button {
+    padding: 15px 20px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: var(--defaultGreen);
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--defaultWhite);
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.UpdateAccountDescription button:hover {
+    background-color: var(--defaultDarkGreen);
+}
+
+.UpdateAccountDescription .message h3 {
+    color: var(--defaultDarkGrey);
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 450px) {
+    .UpdateAccountDescription textarea {
+        width: 100vw;
+    }
+}

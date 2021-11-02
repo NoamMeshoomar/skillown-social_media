@@ -1,0 +1,23 @@
+.Footer {
+    padding: 20px 0;
+    margin: 0 0 20px 0;
+}
+
+.Footer h3 {
+    color: var(--defaultDarkGrey);
+    font-size: 16px;
+    font-weight: 400;
+    align-content: center;
+}
+
+.Footer a {
+    text-decoration: none;
+    color: var(--defaultGreen);
+    font-weight: 500;
+}
+
+@media screen and (max-width: 730px) {
+    .Footer h3 {
+        text-align: center;
+    }
+}

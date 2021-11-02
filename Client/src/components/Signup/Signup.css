@@ -1,0 +1,117 @@
+.Signup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.Signup .form-area {
+    margin-left: 80px;
+}
+
+.Signup .form-area .form-title {
+    text-align: center;
+    margin-bottom: 20px
+}
+
+.Signup .form-area .form-title h1 {
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--defaultDarkGrey);
+    margin-bottom: 10px;
+}
+
+.Signup .form-area .form-title h3 {
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--defaultLightGrey);
+}
+
+.Signup .form-area .signup-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Signup .form-area .signup-form input {
+    margin: 10px 0;
+    padding: 15px;
+    border: 2px solid var(--defaultGreen);
+    border-radius: 10px;
+    width: 360px;
+    height: 45px;
+    color: var(--defaultDarkGrey);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.Signup .form-area .signup-form input::placeholder {
+    color: var(--defaultLightGrey);
+}
+
+.Signup .form-area .signup-form button {
+    width: 100%;
+    height: 45px;
+    background-color: var(--defaultGreen);
+    border: none;
+    border-radius: 10px;
+    margin-top: 20px;
+    color: var(--defaultWhite);
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.Signup .form-area .signup-form button:hover {
+    background-color: var(--defaultDarkGreen);
+}
+
+.Signup .form-area .exist-account {
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 20px;
+    color: var(--defaultDarkGrey);
+}
+
+.Signup .form-area .exist-account a {
+    color: rgb(0, 0, 238);
+    text-decoration: none;
+}
+
+.Signup .errors {
+    width: 100%;
+    height: 50px;
+    background-color: var(--defaultRed);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--defaultWhite);
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.Signup .errors h3 {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 980px) {
+    .Signup .form-area {
+        margin: 0;
+    }
+
+    .Signup .side-image {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 410px) {
+    .Signup .form-area .signup-form input,
+    .Signup .form-area .signup-form button {
+        width: 100vw;
+    }
+}

@@ -1,0 +1,15 @@
+.TopSkillers {
+    width: 230px;
+    height: 670px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-rows: 100px 1fr;
+}
+
+@media screen and (max-width: 1170px) {
+    .TopSkillers {
+        display: none;
+    }
+}

@@ -1,0 +1,10 @@
+.Settings {
+    padding: 20px;
+    width: 100vh;
+}
+
+@media screen and (max-width: 1000px) {
+    .Settings {
+        width: fit-content;
+    }
+}

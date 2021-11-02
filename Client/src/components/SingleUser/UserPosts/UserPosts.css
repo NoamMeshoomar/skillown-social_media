@@ -1,0 +1,117 @@
+.UserPosts h1 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--defaultDarkGrey);
+    border-bottom: 1px solid var(--defaultDarkGrey);
+    display: inline;
+    margin-bottom: 60px;
+}
+
+.posts {
+    margin-top: 20px;
+}
+
+.post {
+    width: 480px;
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 28.5px;
+}
+
+/* Post image */
+
+.post .thumbnail {
+    position: relative;
+    margin-right: 20px;
+}
+
+.post .thumbnail .thumbnail-image {
+    border-radius: 10px;
+}
+
+.post .thumbnail .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* User */
+
+.post .post-information {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+/* Post information */
+
+.post .post-information h1 {
+    color: var(--defaultDarkGrey);
+    font-size: 18px;
+    font-weight: 400;
+    border: none;
+}
+
+.post .post-information .post-details {
+    display: flex;
+    align-items: center;
+}
+
+
+.post .post-information .post-details .views,
+.post .post-information .post-details .likes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.post .post-information .post-details .views h3,
+.post .post-information .post-details .likes h3 {
+    color: var(--defaultDarkGrey);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.post .post-information .post-details .views {
+    margin-right: 20px;
+}
+
+.post .post-information .post-details .views img {
+    width: 26px;
+    height: 26px;
+}
+
+.post .post-information .post-details .likes img {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 550px) {
+    .post {
+        width: 100%;
+    }
+
+    .post .thumbnail .thumbnail-image {
+        width: 200px;
+        height: 120px;
+    }
+
+    .post .post-information h1 {
+        font-size: 14px;
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    .post {
+        width: 100%;
+    }
+}

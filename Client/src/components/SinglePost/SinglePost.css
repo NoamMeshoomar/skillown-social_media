@@ -1,0 +1,28 @@
+.SinglePost {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.SinglePost video {
+    width: 590px;
+    height: 400px;
+}
+
+@media screen and (max-width: 1170px) {
+    .SinglePost {
+        grid-template-columns: none;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .SinglePost {
+        grid-template-rows: 1fr;
+    }
+
+    .SinglePost video {
+        width: 100vw;
+        height: 300px;
+    }
+}

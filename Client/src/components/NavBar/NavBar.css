@@ -1,0 +1,100 @@
+.NavBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.NavBar .logo {
+    width: 38px;
+}
+
+.NavBar .signin {
+    width: 25px;
+}
+
+.NavBar .right-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBar .upload-btn {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBar .upload-btn img {
+    cursor: pointer;
+}
+
+.NavBar .profile {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NavBar .profile img {
+    border-radius: 100%;
+}
+
+.NavBar .profile .user-menu {
+    position: absolute;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    background-color: var(--defaultWhite);
+    z-index: 999;
+    margin-top: 200px;
+    text-align: center;
+    animation: jumpin .3s ease;
+}
+
+.NavBar .profile .user-menu .links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.NavBar .profile .user-menu .links a {
+    text-decoration: none;
+    color: var(--defaultLightGrey);
+    padding: 10px;
+}
+
+.NavBar .profile .user-menu h3 {
+    color: var(--defaultDarkGrey);
+    font-size: 22px;
+    font-weight: 500;
+}
+
+@keyframes jumpin {
+    0% {
+        transform: scale(1.5);
+        opacity: 0.2;
+    }
+    50% {
+        transform: rotate(10deg);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(0), rotate(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1170px) {
+    .NavBar {
+        margin: 0;
+        padding: 20px 20px 0 20px;
+        width: 100vw;
+        justify-content: space-between;
+        align-items: center;
+    }
+}

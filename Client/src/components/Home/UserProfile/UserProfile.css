@@ -1,0 +1,51 @@
+.UserProfile {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.UserProfile img {
+    width: 122px;
+    height: 122px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+}
+
+.UserProfile h1 {
+    font-size: 26px;
+    font-weight: 300;
+    color: var(--defaultDarkGrey);
+    margin-bottom: 5px;
+}
+
+.UserProfile h3 {
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--defaultLightGrey);
+}
+
+.UserProfile h3 span {
+    font-weight: 500;
+    color: var(--defaultDarkGrey);
+}
+
+.UserProfile a {
+    text-decoration: none;
+    background-color: var(--defaultGreen);
+    padding: 10px 15px;
+    color: var(--defaultWhite);
+    font-weight: 500;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: all .3s ease;
+}
+
+.UserProfile a:hover {
+    background-color: var(--defaultDarkGreen);
+}
+
+@media screen and (max-width: 1170px) {
+    .UserProfile {
+        display: none;
+    }
+}

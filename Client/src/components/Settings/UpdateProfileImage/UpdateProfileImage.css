@@ -1,0 +1,110 @@
+.UpdateProfileImage {
+    margin-bottom: 40px;
+}
+
+.UpdateProfileImage h1 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--defaultDarkGrey);
+    margin-bottom: 20px;
+}
+
+.UpdateProfileImage .profile-image {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    color: #414141;
+}
+
+.UpdateProfileImage .profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.UpdateProfileImage .profile-image img:hover {
+    width: 150px;
+    height: 150px;
+    background-color: grey;
+}
+
+.profile-image form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.profile-image form div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-image form button {
+    margin: 20px;
+    background-color: transparent;
+    border: 2px solid #5fd799;
+    color: #5fd799;
+    padding: 10px 15px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.profile-image form button:hover {
+    border-radius: 10px;
+    background-color: #5fd799;
+    color: #fff;
+}
+
+.profile-image form input {
+    z-index: 700;
+}
+
+.profile-image form input::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+.profile-image form input::before {
+    content: 'Select Image';
+    display: inline-block;
+    background: linear-gradient(to left, #f9f9f9, #e3e3e3);
+    border: 1px solid #999;
+    border-radius: 3px;
+    padding: 5px 8px;
+    outline: none;
+    margin-top: 65px;
+    margin-left: 25px;
+    white-space: nowrap;
+    cursor: pointer;
+    text-shadow: 1px 1px #fff;
+    font-weight: 700;
+    font-size: 10pt;
+  }
+
+.profile-image form input[type="file" i] {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    opacity: 0;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.profile-image form input[type="file" i]:hover {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(122, 122, 122);
+    opacity: 0.5;
+}
+
+.UpdateProfileImage .profile-image .message h3 {
+    color: var(--defaultDarkGrey);
+    font-size: 16px;
+    font-weight: 500;
+}

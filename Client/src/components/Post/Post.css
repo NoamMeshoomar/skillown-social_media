@@ -1,0 +1,137 @@
+.Post {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    border-radius: 20px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 28.5px;
+}
+
+/* Post image */
+
+.Post .thumbnail {
+    position: relative;
+    margin-right: 20px;
+}
+
+.Post .thumbnail .thumbnail-image {
+    border-radius: 10px;
+    width: 230px;
+    height: 135px;
+}
+
+.Post .thumbnail .play-icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* User */
+
+.Post .post-information {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.Post .post-information .user-post {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.Post .post-information .user-post img {
+    width: 46px;
+    height: 46px;
+    border-radius: 100%;
+    margin-right: 10px;
+}
+
+.Post .post-information .user-post .user-information h3 {
+    color: var(--defaultDarkGrey);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.Post .post-information .user-post .user-information p {
+    color: var(--defaultLightGrey);
+    font-size: 12px;
+    font-weight: 300;
+}
+
+/* Post information */
+
+.Post .post-information h1 {
+    color: var(--defaultDarkGrey);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.Post .post-information .post-details {
+    display: flex;
+    align-items: center;
+}
+
+
+.Post .post-information .post-details .views,
+.Post .post-information .post-details .likes {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+}
+
+.Post .post-information .post-details .views h3,
+.Post .post-information .post-details .likes h3 {
+    color: var(--defaultDarkGrey);
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.Post .post-information .post-details .views {
+    margin-right: 20px;
+}
+
+.Post .post-information .post-details .views img {
+    width: 26px;
+    height: 26px;
+}
+
+.Post .post-information .post-details .likes img {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 1170px) {
+    .Post {
+        width: 500px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .Post {
+        width: 430px;
+    }
+
+    .Post .thumbnail .thumbnail-image {
+        border-radius: 10px;
+        width: 200px;
+        height: 120px;
+    }
+
+    .Post .post-information .user-post img {
+        width: 40px;
+        height: 40px;
+    }
+
+    .Post .post-information h1 {
+        color: var(--defaultDarkGrey);
+        font-size: 15px;
+        font-weight: 400;
+    }
+}

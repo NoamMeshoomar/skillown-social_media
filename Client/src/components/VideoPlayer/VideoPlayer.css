@@ -1,0 +1,35 @@
+.Video {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.Video video {
+    background-color: #000;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.Video video::-webkit-media-controls {
+    display: none !important;
+  }
+
+.Video .controls {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+
+.Video .controls .play-btn {
+    display: inline;
+    cursor: pointer;
+}
+
+.Video .controls .full-screen-btn {
+    cursor: pointer;
+}

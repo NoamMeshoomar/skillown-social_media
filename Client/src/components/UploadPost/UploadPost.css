@@ -1,0 +1,123 @@
+.UploadPost {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    background-color: var(--defaultWhite);
+}
+
+.UploadPost .upload-info {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.UploadPost .upload-info h3 {
+    color: var(--defaultDarkGrey);
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.UploadPost form {
+    width: 500px;
+}
+
+.UploadPost form input {
+    height: 50px;
+}
+
+.UploadPost form input,
+.UploadPost form textarea {
+    resize: none;
+    width: 100%;
+    border: 2px solid var(--defaultGreen);
+    border-radius: 10px;
+    padding: 20px;
+    font-family: 'Rubik', sans-serif;
+    font-size: 16px;
+    color: var(--defaultDarkGrey);
+}
+
+.UploadPost form input::placeholder,
+.UploadPost form textarea::placeholder {
+    color: var(--defaultLightGrey);
+}
+
+.UploadPost form textarea {
+    margin: 20px 0;
+}
+
+.UploadPost form input[type="file"] {
+    border: 3px dashed var(--defaultGreen);
+    height: 80px;
+    color: transparent;
+}
+
+.UploadPost form input::-webkit-file-upload-button {
+    display: none;
+}
+
+.UploadPost form input::before {
+    content: 'Choose File';
+    color: var(--defaultGreen);
+    font-family: 'Rubik', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.UploadPost form button {
+    border: none;
+    border-radius: 10px;
+    background: var(--defaultGreen);
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    color: var(--defaultWhite);
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.UploadPost form button:hover {
+    background-color: var(--defaultDarkGreen);
+}
+
+.UploadPost form .video {
+    position: relative;
+}
+
+.UploadPost form .video img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 999;
+    cursor: pointer;
+}
+
+.UploadPost form .error-message {
+    background-color: red;
+    width: 100%;
+    margin-top: 20px;
+    color: var(--defaultWhite);
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 550px) {
+    .UploadPost {
+        padding: 0;
+    }
+    
+    .UploadPost form {
+        width: 100vw;
+        padding: 20px;
+    }
+}

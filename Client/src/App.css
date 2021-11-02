@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --defaultDarkGreen: #06C799;
+  --defaultGreen: #00DBA7;
+  --defaultRed: #dc3545;
+  --defaultDarkGrey: #707070;
+  --defaultLightGrey: #CACACA;
+  --defaultExtraLightGrey: #E2E2E2;
+  --defaultWhite: #fff;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  font-family: 'Rubik', sans-serif;
+  overflow-x: hidden;
+}
+
+.App {
+  width: 1100px;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr 60px;
+  grid-gap: 50px;
+  align-items: flex-start;
+}
+
+input,
+textarea,
+button {
+  outline: none;
+}
+
+.loading {
+  animation: spin 1s linear infinite;
+  -webkit-animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0); }
+  100% { transform: rotate(360deg); }
+}
+
+@media screen and (max-width: 1170px) {
+  .App {
+    width: 100vw;
+  }
+}

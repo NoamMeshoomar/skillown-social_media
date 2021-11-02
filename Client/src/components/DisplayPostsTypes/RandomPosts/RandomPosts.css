@@ -1,0 +1,15 @@
+.RandomPosts h1 {
+    font-size: 22px;
+    font-weight: 500;
+    color: var(--defaultDarkGrey);
+}
+
+.RandomPosts .posts {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-gap: 40px;
+}
+
+.RandomPosts .posts a {
+    text-decoration: none;
+}

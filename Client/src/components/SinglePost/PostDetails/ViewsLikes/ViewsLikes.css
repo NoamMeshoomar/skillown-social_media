@@ -1,0 +1,29 @@
+.ViewsLikes {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    bottom: 20px;
+}
+
+.ViewsLikes .views {
+    margin-right: 20px;
+}
+
+.ViewsLikes .likes img {
+    margin-bottom: 5px;
+    cursor: pointer;
+}
+
+.ViewsLikes .views,
+.ViewsLikes .likes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: var(--defaultDarkGrey);
+}
+
+.ViewsLikes .views h3,
+.ViewsLikes .likes h3 {
+    color: var(--defaultDarkGrey);
+}

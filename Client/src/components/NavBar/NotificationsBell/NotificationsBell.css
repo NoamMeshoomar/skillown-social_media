@@ -1,0 +1,165 @@
+.NotificationsBell {
+    position: relative;
+}
+
+.NotificationsBell .bell {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0 20px;
+}
+
+.NotificationsBell .bell:hover {
+    animation: ring .3s ease infinite;
+}
+
+.NotificationsBell .close-btn {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--defaultLightGrey);
+    cursor: pointer;
+}
+
+.NotificationsBell .bell-circle {
+    position: absolute;
+    width: 13px;
+    height: 13px;
+    left: 15px;
+    background-color: var(--defaultRed);
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NotificationsBell .bell-circle h3 {
+    color: var(--defaultWhite);
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.NotificationsBell .bell-menu {
+    position: absolute;
+    top: 255px;
+    left: 50%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 450px;
+    background-color: var(--defaultWhite);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    animation: jumpin .3s ease;
+    z-index: 999;
+}
+
+.NotificationsBell .bell-menu .notifications {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow-y: scroll;
+}
+
+.NotificationsBell .bell-menu .notifications::-webkit-scrollbar {
+    display: none;
+}
+
+.NotificationsBell .bell-menu .notifications .notification {
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.NotificationsBell .bell-menu .notifications .notification img {
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.NotificationsBell .bell-menu .notifications .notification .notification-info .username {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--defaultDarkGrey);
+}
+
+.NotificationsBell .bell-menu .notifications .notification .notification-info h3 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--defaultDarkGrey);
+}
+
+.NotificationsBell .bell-menu .notifications .notification .notification-info h3 span {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--defaultGreen);
+}
+
+.NotificationsBell .bell-menu h1 {
+    font-size: 28px;
+    font-weight: 500;
+    color: var(--defaultDarkGrey);
+}
+
+.NotificationsBell .no-notifications {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--defaultDarkGrey);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(-10deg);
+    }
+    25% {
+        transform: rotate(20deg);
+    }
+    50% {
+        transform: rotate(-10deg);
+    }
+    75% {
+        transform: rotate(20deg);
+    }
+    100% {
+        transform: rotate(-10deg);
+    }
+}
+
+@keyframes jumpin {
+    0% {
+        transform: scale(1.5);
+        opacity: 0.2;
+    }
+    50% {
+        transform: rotate(10deg);
+        opacity: 0.5;
+    }
+    100% {
+        transform: scale(0), rotate(0);
+        opacity: 1;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .NotificationsBell .bell-menu {
+        top: 255px;
+        left: -100px;
+    }
+}
+
+@media screen and (max-width: 470px) {
+    .NotificationsBell .bell-menu {
+        width: 380px;
+        left: -60px;
+    }
+}

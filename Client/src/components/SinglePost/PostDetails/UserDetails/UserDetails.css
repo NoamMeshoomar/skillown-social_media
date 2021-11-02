@@ -1,0 +1,49 @@
+.UserDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.UserDetails a {
+    text-decoration: none;
+}
+
+.UserDetails .user-information {
+    display: flex;
+    align-items: center;
+}
+
+.UserDetails .user-information img {
+    border-radius: 100%;
+    margin-right: 20px;
+}
+
+.UserDetails .user-information .details h2 {
+    color: var(--defaultDarkGrey);
+    font-size: 20px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.UserDetails .user-information .details h3 {
+    color: var(--defaultLightGrey);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.UserDetails .follow-btn {
+    background-color: var(--defaultGreen);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: var(--defaultWhite);
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Rubik', sans-serif;
+    transition: all .3s ease;
+    cursor: pointer;
+}
+
+.UserDetails .follow-btn:hover {
+    background-color: var(--defaultDarkGreen);
+}

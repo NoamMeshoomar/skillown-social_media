@@ -1,0 +1,50 @@
+.TopSkillersUsers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.TopSkillersUsers .user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-decoration: none;
+    margin: 40px 0;
+}
+
+.TopSkillersUsers .user img {
+    width: 65px;
+    height: 65px;
+    border-radius: 100%;
+}
+
+.TopSkillersUsers .user h1 {
+    color: var(--defaultDarkGrey);
+    font-size: 20px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.TopSkillersUsers .user h3 {
+    color: var(--defaultLightGrey);
+    font-size: 16px;
+    font-weight: 300;
+}
+
+@media screen and (max-width: 1170px) {
+    .TopSkillersUsers {
+        flex-direction: column;
+    }
+
+    .TopSkillersUsers .users {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .TopSkillersUsers .user {
+        margin: 0;
+    }
+}

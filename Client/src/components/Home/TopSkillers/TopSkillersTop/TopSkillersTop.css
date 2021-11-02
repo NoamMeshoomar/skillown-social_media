@@ -1,0 +1,18 @@
+.TopSkillersTop {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.TopSkillersTop img {
+    width: 32px;
+    height: 32px;
+}
+
+.TopSkillersTop h3 {
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--defaultDarkGrey);
+    margin-top: 10px;
+}
