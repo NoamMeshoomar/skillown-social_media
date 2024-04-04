@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const usersSchema = mongoose.Schema({
+const usersSchema = new mongoose.Schema({
     image: { type: String, default: 'default-profile.jpg' },
     username: { type: String, unique: true, required: true },
     displayedUsername: { type: String, required: true },

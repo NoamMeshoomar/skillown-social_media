@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const FollowersSchema = mongoose.Schema({
+const FollowersSchema = new mongoose.Schema({
     // The ID of the follower
     followerUserId: { type: mongoose.Schema.Types.ObjectId, ref: 'users' },
     // The ID of the user that the other user following him

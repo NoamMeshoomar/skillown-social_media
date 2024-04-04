@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const postsSchema = mongoose.Schema({
+const postsSchema = new mongoose.Schema({
     id: { type: String, unique: true },
     video: { type: String, required: true, unique: true },
     thumbnail: { type: String, required: true, unique: true },

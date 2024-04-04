@@ -10,7 +10,7 @@ const TopSkillers = () => {
     const springProps = useSpring({ opacity: 1, transform: 'translateX(0)', from: { opacity: 0, transform: 'translateX(-200px)' } });
 
     return(
-        <animated.div style={ springProps }>
+        <animated.div style={springProps}>
             <div className="TopSkillers">
                 <TopSkillersTop />
                 <TopSkillersUsers />

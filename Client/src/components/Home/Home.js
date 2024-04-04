@@ -18,7 +18,7 @@ const Home = () => {
 
     return(
         <div className="Home">
-            { !isLogged ? <animated.div className="sign-in" style={ springProps }>
+            { !isLogged ? <animated.div className="sign-in" style={springProps}>
                     <div className="sign-in-text">
                         <img src={ signInIcon } width="25" alt=""/>
                         <h3>Sign in for more options</h3>

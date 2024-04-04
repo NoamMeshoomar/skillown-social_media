@@ -4,12 +4,15 @@ const Users = require('../models/Users');
 const { notification } = require('../utils/notifications');
 
 module.exports = {
-    checkFollowing: (req, res) => {
-        if(req.user._id.toString() === req.params.id.toString()) return;
-        
-        Followers.findOne({ followerUserId: req.user._id, followedUserId: req.params.id })
-        .then(follow => res.status(200).json({ isFollowing: follow.isFollowing }))
-        .catch(() => res.status(400).json({ message: 'Failed to check if the user is following' }));
+    checkFollowing: async (req, res) => {
+        try {
+            if(req.user._id.toString() === req.params.id.toString()) return res.sendStatus(400);
+            
+            const follow = await Followers.findOne({followerUserId: req.user._id, followedUserId: req.params.id});
+            res.status(200).json({ isFollowing: follow.isFollowing });
+        } catch (cerr) {
+            res.status(400).json({message: 'Failed to check if the user is following'});
+        }
     },
     follow: async (req, res) => {
         if(req.user._id.toString() === req.params.id.toString()) return res.status(400).json({

@@ -11,7 +11,7 @@ const followersRoute = require('./routes/followers');
 
 const app = express();
 
-const beginURL = '/api/v1';
+const beginURL = '/api';
 
 mongoose.connect(process.env.MONGODB_URI, {
     useNewUrlParser: true,
@@ -36,6 +36,6 @@ app.use(beginURL + '/posts', postsRoute);
 app.use(beginURL + '/notifications', notificiationsRoute);
 app.use(beginURL + '/followers', followersRoute);
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 5500;
 
 app.listen(PORT, () => console.log(`Server is running on port ${ PORT }`));

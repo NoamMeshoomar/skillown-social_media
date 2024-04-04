@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-const notificationsSchema = mongoose.Schema({
+const notificationsSchema = new mongoose.Schema({
     authorId: { type: mongoose.Schema.Types.ObjectId, required: true, ref: 'users' },
     userId: { type: mongoose.Schema.Types.ObjectId, required: true, ref: 'users' },
     reason: { type: String, required: true }

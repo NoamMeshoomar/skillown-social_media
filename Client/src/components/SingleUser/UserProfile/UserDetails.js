@@ -25,7 +25,8 @@ const UserDetails = ({ id, image, username, followers }) => {
                     'auth-token': localStorage.getItem('auth-token')
                 }
             })
-            .then(res => setIsFollow(res.data.isFollowing));
+            .then(res => setIsFollow(Boolean(res.data.isFollowing)))
+            .catch(err => console.error(err));
         }
 
         Axios({

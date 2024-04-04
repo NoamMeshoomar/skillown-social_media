@@ -15,8 +15,8 @@ const SingleUser = (props) => {
     const userName = props.match.params.userName;
 
     useEffect(() => {
-        Axios.get(`/users/singleuser/${ userName }`)
-        .then(res => setUser(res.data.user));
+        Axios.get(`/users/singleuser/${userName}`)
+            .then(res => setUser(res.data.user));
     }, [userName]);
 
     const springProps = useSpring({ opacity: 1, transform: 'translateY(0)', from: { opacity: 0, transform: 'translateY(-120px)' } });
