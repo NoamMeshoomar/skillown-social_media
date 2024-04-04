@@ -1,1 +1,1 @@
-export const mediaBeginUrl = 'https://skillown.vercel.app/uploads';
+export const mediaBeginUrl = 'https://skillown-f9bc9d34718f.herokuapp.com/uploads';

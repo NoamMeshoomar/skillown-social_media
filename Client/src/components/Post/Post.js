@@ -15,7 +15,7 @@ const Post = ({ thumbnail, title, views, likes, userImage, userName, userFollowe
         <animated.div style={ springProps }>
             <div className="Post">
                 <div className="thumbnail">
-                    <img className="thumbnail-image" width="230" height="135" src={ `${ mediaBeginUrl }/images/${ thumbnail }` } alt="" />
+                    <img className="thumbnail-image" width="230" height="135" src={ `${ mediaBeginUrl }/thumbnails/${ thumbnail }` } alt="" />
                     <img className="play-icon" src={ playIcon } width="72" alt=""/>
                 </div>
                 <div className="post-information">
